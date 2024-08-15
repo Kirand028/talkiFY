@@ -1,9 +1,9 @@
 <?php 
 
     $servername = "localhost";
-    $username = "id21676769_talkify";
-    $password = "Talkify 123&";
-    $dbname = "id21676769_talkify";
+    $username = "talkify";
+    $password = "Talkify";
+    $dbname = "talkify";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
