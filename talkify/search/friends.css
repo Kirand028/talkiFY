@@ -1,0 +1,350 @@
+.search-head {
+    width: 100%;
+    height: 8%;
+    padding: 0 10%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#6e6e6e;
+    /* border: 1px solid red; */
+}
+
+.search-submit {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid blue; */
+}
+
+.search-btn {
+    width: 50px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background: #d5d5d5;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.search-btn i {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.search-inp {
+    outline: none;
+    border: none;
+    height: 35px;
+    padding: 0 20px;
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 50px;
+}
+
+.list-section {
+    height: 85%;
+    width: 100%;
+    padding: 0 10%;
+    /* border: 1px solid #005aff; */
+}
+
+.nav-header {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 5px 2px;
+}
+
+.nav-header p {
+    width: 70px;
+    color: #6e6e6e;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-header .nav-underline.yes {
+    border-bottom: 1px solid #1e3c72;
+}
+
+.friends-list {
+    width: 100%;
+    height: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    overflow: auto;
+}
+
+.follower-list, .following-list, .all-list, .chat-list {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    padding: 0 10px;
+}
+
+.showDiv {
+    display: flex;
+}
+
+.friend-chat-section {
+    width: 100%;
+    color: #6e6e6e;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.friend-chat-section h5{
+    margin: 15px 0 0 10px;
+}
+
+.friend-list {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* border: 1px solid red; */
+}
+
+.friend-list form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-now {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.friend-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 5px;
+}
+
+.friend-photo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #1e3c72;
+}
+
+.friend-photo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.friend-username {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: auto;
+    width: 90%;
+    text-align: left;
+}
+
+.friend-username p {
+    text-align: left;
+    color: #000000;
+    font-size: 15px;
+}
+
+.friend-username span {
+    font-size: 12px;
+    color: #494949;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.friend-username.followers {
+    width: 70%;
+}
+
+.friend-username.following {
+    width: 70%;
+}
+
+.followers-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.followers-btn button, .retry-btn {
+    background: #1e3c72;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 70px;
+    padding: 5px;
+    font-size: 11px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.user-details {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.user-container {
+    width: 90px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1e3c72;
+    box-shadow: 3px 3px 5px #b1b2c4;
+    border-radius: 5px;
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.follows-you {
+    font-size: 7px;
+    color: white;
+    margin-top: -5px;
+    margin-left: auto;
+    background: #005aff;
+    padding: 0 5px;
+    border-radius: 10px 0 0 10px;
+}
+
+.user-photo img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.user-name input{
+    width: 70px;
+    height: 22px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+}
+
+.action-btn button {
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    background: #fff;
+    padding: 0 8px;
+    color: #1e3c72;
+    border-radius: 4px;
+}
+
+.all-list {
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.wrong-msg {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.searched-list {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.searched-list button {
+    position: static;
+}
+
+.searched-user-found {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .friend-username.followers {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-head, .list-section {
+        padding: 10px 20px;
+    }
+    .list-section {
+        height: 86%;
+    }
+    .search-submit {
+        width: 65%;
+    }
+    .search-inp {
+        width: 100%;
+    }
+    .friend-username {
+        width: 85%;
+    }
+    .friend-username.followers {
+        width: 40%;
+    }
+    .friend-username.following {
+        width: 55%;
+    }
+}

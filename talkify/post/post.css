@@ -1,0 +1,275 @@
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.post-header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+#cross-mark {
+    color: #1e3c72 !important;
+    font-size: 16px !important;
+}
+
+.post-header p{
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+.post-header button {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #1e3c72;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.post-body{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write-post, .old-post {
+    width: 80%;
+    /* height: 50%; */
+    /* overflow: hidden; */
+}
+
+.write-post {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 20px 20px 20px;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.profile-div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    /* border: 1px solid; */
+}
+
+.profile-div .profile-img {
+    width: 50px !important;
+    height: 50px !important;
+    background: #fafafa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e3c72;
+}
+
+.profile-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.message {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 50px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    animation: slideRightToLeft .5s linear forwards;
+    background: #f7f7f7;
+    color: #1e3c72;
+    border: 1px solid #efefef;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    min-width: 300px;
+    max-width: auto;
+}
+
+.message i {
+    font-size: 15px;
+}
+
+@keyframes slideRightToLeft {
+    0% {
+        right: 0%; /* Start position */
+    }
+    100% {
+        right: 10%; /* End position */
+    }
+}
+
+.profile-div .username {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+    line-height: 28px;
+}
+
+.profile-div .username p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.visibility {
+    color: #999;
+    border: 1px solid #efefef;
+    padding: 1px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.visibility:active {
+    background: #fafafa;
+}
+
+.post-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    gap: 20px;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+}
+
+.post-title .image-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+    font-size: 14px;
+}
+
+.post-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-img img {
+    height: 30px;
+    border-radius: 10px;
+}
+
+.wrapper{
+    height: 50px;
+    padding: 0 15px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper #file-input{
+    display:none;
+}
+  
+.wrapper label[for='file-input'] *{
+    vertical-align: middle;
+    cursor:pointer;
+    font-size: 20px;
+    color: #999;
+}
+
+i.remove{
+    vertical-align:middle;
+    margin-left: 5px;
+    cursor:pointer;
+    display:none;
+    font-size: 20px;
+    color: red;
+}
+
+.write-post-head {
+    width: 100%;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+}  
+
+.icon-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    color: #888;
+    background: #f0f0f0;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+}
+
+.icon-container span {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.icon-container span:active {
+    background: #e5e5e5;
+}
+
+.textarea-container, textarea {
+    width: 100%;
+    height: 250px;
+}
+
+.textarea-container textarea {
+    resize: none;
+    padding: 25px;
+    outline: none;
+    border: none;
+    background: #fafafa;
+    border-radius: 0 0 10px 10px;
+    text-decoration: italic;
+}
+
+.textarea-container textarea::placeholder {
+    color: #aaa;
+}
+
+@media screen and (max-width: 580px) {
+    .write-post {
+        width: 88%;
+        padding: 0;
+        box-shadow: none;
+    }
+    .post-header {
+        height: 12%;
+    }
+    .post-title {
+        padding: 5px 15px;
+    }
+    .old-post {
+        width: 100%;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    #imageDiv {
+        width: 50%;
+    }
+    #imageDiv img {
+        width: 98%;
+    }
+}

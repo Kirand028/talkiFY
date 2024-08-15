@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkify</title>
+    <link rel="icon" href="talkify.png">
+    <link rel="stylesheet" href="ahome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/solid.min.css">
+    <script src="ahome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+
+    <div class="main-container">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white ms-5" href="#">
+                    <div class="first-row">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Talkify</h3>
+                    </div>
+                </a>
+                <div class="horiz-nav">
+                    <a href="#" class="text-white" onclick="showPage('home')">Home</a>
+                    <a href="#" class="text-white" onclick="showPage('login')">Login</a>
+                    <a href="#" class="text-white" onclick="showPage('register')">Register</a>
+                    <a href="#" class="text-white" onclick="showPage('about')">About</a>
+                    <a href="#" class="text-white me-5" onclick="showPage('contact')">Contact</a>
+                </div>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">talkify</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" onclick="showPage('home')" aria-current="page"
+                                    href="#"><i class="fa-solid fa-house-chimney"></i> &nbsp;&nbsp;Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" onclick="showPage('login')" href="#"><i
+                                        class="fa fa-key"></i> &nbsp;&nbsp;Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" onclick="showPage('register')" href="#"><i
+                                        class="fa-solid fa-user-plus"></i> &nbsp;&nbsp;Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" onclick="showPage('contact')" href="#"><i
+                                        class="fa-solid fa-phone"></i> &nbsp;&nbsp;Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" onclick="showPage('about')" href="#"><i
+                                        class="fa-solid fa-address-card"></i> &nbsp;&nbsp;About</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content">
+            <div id="home" class="main-content-div" style="display: flex;">
+                <div class="home-first-row">
+                    <span class="text1">Welcome</span>
+                    <span class="text2">
+                        You To
+                    </span>
+                </div>
+                <div class="home-second-row">
+                    <svg viewBox="0 0 960 300" class="svg-talkify">
+                        <symbol id="s-text">
+                            <text text-anchor="middle" x="50%" y="80%" class="greet">talkiFY</text>
+                            <text text-anchor="middle" x="52%" y="80%" class="greet">talkiFY</text>
+                        </symbol>
+
+                        <g class="g-ants">
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                        </g>
+                    </svg>
+                    <p class="slogan">I Follow You!</p>
+                </div>
+
+                <div class="home-third-row">
+                    <div class="talkify-content whats-talkify">
+                        Talkify is a social media platform where people can connect and share thoughts, photos with
+                        friends and followers. It's like a digital gathering place where you can chat, post updates, and
+                        discover new things. Whether it's sharing funny memes or discussing important topics, Talkify
+                        lets you express yourself and stay connected with others in a fun and easy way.
+                    </div>
+                    <div class="talkify-features d-flex align-items-center justify-content-around">
+                        <div
+                            class="talkify-features-left d-flex flex-column align-items-center justify-content-center gap-3">
+                            <div class="feature1">
+                                <h4>1. Chatting</h4>
+                                <p>Instantly communicate with friends through text messages.</p>
+                            </div>
+                            <div class="feature2">
+                                <h4>2. Posting</h4>
+                                <p>Share photos and videos with your followers.</p>
+                            </div>
+                            <div class="feature3">
+                                <h4>3. Discover</h4>
+                                <p>Explore trending topics and find new people to connect with.</p>
+                            </div>
+                        </div>
+                        <div class="talkify-features-center d-flex align-items-center justify-content-center">
+                            <img src="iphone-screen.png" alt="">
+                        </div>
+                        <div
+                            class="talkify-features-right d-flex flex-column align-items-center justify-content-center gap-3">
+                            <div class="feature6">
+                                <h4>4. Search</h4>
+                                <p>Find new people and interact with them.</p>
+                            </div>
+                            <div class="feature4">
+                                <h4>5. Privacy Settings</h4>
+                                <p>Control who can see your posts and manage your profile's privacy.</p>
+                            </div>
+                            <div class="feature5">
+                                <h4>6. Profile Settings</h4>
+                                <p>Customize your profile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="talkify-content join-us-today">
+                        <div class="talkify-images">
+                            <img src="bgbg.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Join Us Today</h2>
+                            <p>Ready to embark on a flavorful journey? Sign up for your free talkify account and start
+                                sharing your love of food with a community that's as passionate as you are. Let's
+                                talkify together!</p>
+                        </div>
+                    </div>
+                    <div class="talkify-content join-the-Convo">
+                        <div class="talkify-images">
+                            <img src="bgbg.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Join the Conversation</h2>
+                            <p>Connect with fellow food enthusiasts in our vibrant community forums. Share your cooking
+                                tips, ask for advice, and swap stories about your culinary adventures. Whether you're a
+                                novice or a seasoned pro, everyone is welcome at talkify.</p>
+                        </div>
+                    </div>
+                    <div class="talkify-content get-inspired">
+                        <div class="talkify-images">
+                            <img src="bgbg.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Get Inspired</h2>
+                            <p>Follow along with our featured chefs and home cooks as they whip up delicious dishes in
+                                step-by-step video tutorials. From quick weeknight meals to extravagant dinner party
+                                spreads, let talkify ignite your passion for cooking and exploration.</p>
+                        </div>
+                    </div>
+                    <div class="talkify-content ">
+                        <div class="talkify-images">
+                            <img src="bgbg.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Stay Updated</h2>
+                            <p>Never miss out on the latest culinary trends, cooking techniques, and foodie events. Our
+                                blog features insightful articles, chef interviews, and behind-the-scenes glimpses into
+                                the world of food. Subscribe to our newsletter to receive regular updates delivered
+                                straight to your inbox.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="login" class="main-content-div" style="display:none;">
+                <div class="container py-1 h-40">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                            <div class="card bg-dark border border-white text-white w-100" style="border-radius: 1rem;">
+                                <div class="card-body p-5 text-left">
+
+                                    <form method="POST" id="login-form">
+
+                                        <h2 class="fw-bold mb-2">Login</h2>
+                                        <p class="text-white-50 mb-5" id="log-message">Please enter your email/username and password!</p>
+
+                                        <div class="form-outline form-white mb-4">
+                                            <label class="form-label text-clr" for="log-email">Username / Email</label>
+                                            <input type="text" id="log-email" name="log-email"
+                                                class="form-control bg-dark text-white" />
+                                        </div>
+
+                                        <div class="form-outline form-dark mb-1">
+                                            <label class="form-label text-clr" for="log-password">Password</label>
+                                            <input type="password" id="log-password" name="log-password"
+                                                class="form-control bg-dark text-white" />
+                                        </div>
+
+                                        <p class="small mb-5"><a class="text-white-50" href="#">Forgot
+                                                password?</a></p>
+
+                                        <button class="btn btn-outline-light bg-dark px-5 mb-2 text-clr"
+                                            id="log-submit" name="log-btn">Login</button>
+    
+                                        <p class="mb-0 small text-white-50 fw-bold">Don't have an account? <a href="#!"
+                                                class="text-clr fw-bold" onclick="showPage('register')">Sign Up</a>
+                                        </p>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="register" class="main-content-div" style="display:none;">
+                <div class="container py-1 h-40">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                            <div class="card bg-dark border border-white text-white w-100" style="border-radius: 1rem;">
+                                <div class="card-body pt-4 pb-4 ps-5 pe-5 text-left">
+
+                                    <form method="POST" id="register-form">
+
+                                        <h2 class="fw-bold mb-2">Register</h2>
+                                        <p class="text-white-50 mb-4" id="reg-message">Please enter your email and password!</p>
+
+                                        <div class="form-outline form-white mb-2">
+                                            <label class="form-label text-clr" for="reg-username">Username :</label>
+                                            <input type="text" id="reg-username"
+                                                class="form-control bg-dark text-white" name="reg-username" />
+                                        </div>
+                                        
+                                        <div class="form-outline form-white mb-2">
+                                            <label class="form-label text-clr" for="reg-email">Email :</label>
+                                            <input type="email" id="reg-email"
+                                                class="form-control bg-dark text-white" name="reg-email" />
+                                        </div>
+
+                                        <div class="form-outline form-dark mb-2">
+                                            <label class="form-label text-clr" for="reg-passwrd">Password :</label>
+                                            <input type="password" id="reg-password"
+                                                class="form-control bg-dark text-white" name="reg-password" />
+                                        </div>
+                                        <div class="form-outline form-dark mb-4">
+                                            <label class="form-label text-clr" for="reg-cpassword">Confirm password
+                                                :</label>
+                                            <input type="password" id="reg-cpassword"
+                                                class="form-control bg-dark text-white" name="reg-cpassword" />
+                                        </div>
+
+                                        <button class="btn btn-outline-light bg-dark px-5 mb-2 text-clr"
+                                            type="submit">Register</button>
+
+                                        <p class="mb-0 small text-white-50 fw-bold">Already have an account? <a href="#!"
+                                                class="text-clr fw-bold" onclick="showPage('login')">Login</a>
+                                        </p>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="main-content-div" style="display:none;">
+                <div class="about-us p-5">
+                    <h2>About Us</h2>
+                    <p class="mt-5">Welcome to Talkify! We're a vibrant community where you can connect with friends,
+                        share moments, and discover new interests. Whether it's sparking conversations, sharing laughs,
+                        or exploring new ideas, Talkify is your go-to destination for staying connected and expressing
+                        yourself. Join us in creating a positive and engaging online space where everyone's voice is
+                        heard</p>
+                </div>
+                <!-- <div class="about-us part-2">
+                    <div>
+                        <h3>Community-Centric</h3>
+                        <p>talkify is more than just a recipe database; it's a thriving community of food lovers from
+                            all walks of life. We believe that the best meals are enjoyed when shared with others, and
+                            our platform is designed to foster connections, spark conversations, and inspire creativity
+                            in the kitchen.</p>
+                    </div>
+                    <div>
+                        <h3>Diversity and Inclusivity</h3>
+                        <p>We celebrate the rich tapestry of culinary traditions from around the globe. Whether you're a
+                            fan of Italian pasta, Indian curry, or Mexican tacos, you'll find a place at talkify. We
+                            embrace diversity in ingredients, techniques, and dietary preferences, ensuring that
+                            everyone feels welcome and represented.</p>
+                    </div>
+                    <div>
+                        <h3>Passion for Quality</h3>
+                        <p>We're committed to curating only the finest recipes, articles, and resources for our
+                            community. Our team of culinary experts and food enthusiasts are dedicated to bringing you
+                            content that is not only delicious but also reliable, informative, and inspiring.</p>
+                    </div>
+                    <div>
+                        <h3>Empowering Home Cooks</h3>
+                        <p>At talkify, we believe that everyone has the potential to be a culinary artist. Whether
+                            you're a seasoned chef or a kitchen novice, we provide the tools, resources, and support you
+                            need to unleash your creativity and confidence in the kitchen.</p>
+                    </div>
+                    <div>
+                        <h3>Join Our Journey</h3>
+                        <p>We invite you to join us on this delicious adventure! Explore our ever-growing collection of
+                            recipes, connect with like-minded foodies in our community forums, and let your taste buds
+                            guide you to new culinary horizons. Together, let's savor the flavors of life and create
+                            lasting memories around the dining table.</p>
+                    </div>
+                </div> -->
+
+            </div>
+            <div id="contact" class="main-content-div" style="display:none;">
+                <h2>Contact Us</h2>
+                <div class="contact-container d-flex align-items-center justify-content-center col-12 col-md-8 col-lg-6 col-xl-5 p-4 gap-2">
+                    <form class="contact-form d-flex flex-column gap-2 border align-items-center justify-content-center" action="https://formsubmit.co/dkiran4661@gmail.com" method="POST">
+                        <div class="form-group">
+                            <lable class="text-white"> Name :</lable>
+                            <input type="text" name="name" required class="bg-dark form-control" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <lable class="text-white"> Your email :</lable>
+                            <input type="email" name="email" required class="bg-dark form-control" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <lable class="text-white"> Message :</lable>
+                            <textarea rows="4" required class="bg-dark form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit"  class="btn text-white border submit-form">Submit</button>
+                    </form>
+
+                    <div class="social d-flex">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://www.twitter.com"><i class="fab fa-twitter-square text-warning"></i></a></li>
+                            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square text-warning"></i></a></li>
+                            <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin text-warning"></i></a></li>
+                            <li><a href="https://www.facebook.com"><i class="fab fa-instagram-square text-warning"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
+
+
+<!-- <button class="hamburger" onclick="toggleNavbar()">☰</button>
+    <div class="navbar" id="navbar">
+        <div class="nav-row1">
+      onclick="closeNavbar()"      <a href="#" class="">talkify</a>
+        </div>
+        <div class="nav-row2">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('login')">Login</a>
+            <a href="#" onclick="showPage('register')">Register</a>
+            <a href="#" onclick="showPage('about')">About</a>
+            <a href="#" onclick="showPage('contact')">Contact</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNavbar()">&times;</a>
+        </div>
+    </div> -->
